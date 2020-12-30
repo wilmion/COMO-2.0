@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+-var Navigation = ['> COMO' , 'VADO' , 'VADO SL']
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title COMO
+        link(rel="shortcut icon", href="https://orientevota.com/wp-content/uploads/logo-pagina-web-300x288.png", type="image/x-icon")
+    body
+        header.header
+            section.header__content
+                picture
+                    img(src="../src/Images/loges/loge.png", alt="Specialized")
+                nav.header__nav
+                    ul.header__nav__list
+                        each item in Navigation
+                            li.header__nav__list__item #{item}
