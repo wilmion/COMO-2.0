@@ -1,5 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
+const webpack = require('webpack');
 
 module.exports = {
     entry : path.resolve(__dirname , './src/index.js'),
@@ -16,7 +18,8 @@ module.exports = {
             },
             {
                 test: /\.pug$/,
-                use: ['html-loader' , 'pug-html-loader']
+                use: ['html-loader' , 'pug-html-loader'],
+                
             },
             {
                 test: /\.less$/i,
@@ -33,5 +36,6 @@ module.exports = {
             filename : path.resolve(__dirname , './dist/index.html'),
             template : path.resolve(__dirname , './public/index.pug'),
         }),
+        new HtmlWebpackPugPlugin()
     ]
 }

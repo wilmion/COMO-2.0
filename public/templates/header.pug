@@ -1,5 +1,6 @@
-<!DOCTYPE html>
--var Navigation = ['> COMO' , 'VADO' , 'VADO SL']
+-var navigation = ['> COMO' , 'VADO' , 'VADO SL']
+
+doctype html
 html(lang="en")
     head
         meta(charset="UTF-8")
@@ -9,9 +10,15 @@ html(lang="en")
     body
         header.header
             section.header__content
-                picture
-                    img(src="../src/Images/loges/loge.png", alt="Specialized")
-                nav.header__nav
-                    ul.header__nav__list
-                        each item in Navigation
-                            li.header__nav__list__item #{item}
+                div.header__grid--column
+                    picture
+                        img.headergrid__image(src="/../", alt="specialized")
+                    nav.header__nav
+                        ul.header__nav__list
+                            each item in navigation
+                                li.header__nav__list__item #{item}
+                div.header__grid--column 
+                    h1.header__title TURBO COMO
+                    h2.header__slogan ERES TÚ,SÓLO QUE MÁS RÁPIDO
+                div.header__grid--column 
+                    a.header__button CONTÁCTANOS
