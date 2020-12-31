@@ -1,1 +1,62 @@
+mixin details(indicator , info)
+    .columna__details__column
+        p.columna__details__column__indicator #{indicator}
+        h4.columna__details__column__info #{info}
+mixin inputs(utilidad , typeinput) 
+    label(for=`formulario de ${utilidad}`)
+        input(type=`${typeinput}` , placeholder=`${utilidad}`) 
+mixin pictures(rute , speach)
+    picture
+        img(src=`${rute}`, alt=`${speach}`)
 include ./templates/header.pug
+main.main
+    section.informacion
+        h2.informacion__title DIVERSIÓN SIN LÍMITES
+        p.informacion__descripcion 
+            | Con estilo, potente y divertida, la Turbo como te hace sentir bien. La conducción es 
+            br
+            | tan suave y cómoda como parece, y su diseño eficiente te ayuda a sacar el máximo 
+            br
+            | provecho en cada pedaleada. Esta bici te hará sonreír más y sudar menos.
+    section.informacionProduct
+        .columna
+            img(src="../src/Images/Products/Motor.png", alt="Motor") 
+        .columna
+            h2.informacionProduct__title POTENCIA SUAVE
+            h3.informacionProduct__descripcion 
+                | Los motores Specialized son suaves, potentes 
+                br
+                | y silenciosos. El exclusivo sistema Rx Street Tune de 
+                br
+                | la Turbo Como está optimizado para pedalear en la 
+                br
+                | ciudad. Así cuando comiences desde parado
+                br
+                | , despegarás rápidamente, de manera fácil y segura.
+            .columna__details
+                +details("POTENCIA","4x Tú")
+                +details("PESO" , "3.4kg")
+    section.informacionProduct
+        .columna
+            img(src="../src/Images/Products/Termometer.png", alt="Motor") 
+        .columna
+            h2.informacionProduct__title SIEMPRE EN MOVIMIENTO
+            h3.informacionProduct__descripcion 
+                | La batería de la Turbo Como no te dejará varado
+                br
+                | ,  y contiene energía de sobra para llevarte a todo 
+                br
+                | lugar. La batería bloqueable e integrada es tan 
+                br
+                | fácil de quitar, como de cargar.
+            .columna__details
+                +details("POTENCIA","600 Wh")
+                +details("TIEMPO DE CARGA" , "4h40m")
+                
+    section.informacion
+        h2.informacion__title COMPRA EL EQUIPO
+        p.informacion__descripcion 
+            | Lorem ipsum dolor sit amet, consectetur adipiscing adipiscing elit.
+    include ./templates/footer.pug
+    
+

@@ -17,11 +17,6 @@ module.exports = {
                 exclude: /node_modules/      
             },
             {
-                test: /\.pug$/,
-                use: ['html-loader' , 'pug-html-loader'],
-                
-            },
-            {
                 test: /\.less$/i,
                 use: [
                     "style-loader",
@@ -34,7 +29,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             filename : path.resolve(__dirname , './dist/index.html'),
-            template : path.resolve(__dirname , './public/index.pug'),
+            template : path.resolve(__dirname , './public/index.html'),
         }),
         new HtmlWebpackPugPlugin()
     ]
