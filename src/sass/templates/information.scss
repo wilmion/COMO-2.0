@@ -1,0 +1,21 @@
+.informacion {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25%;
+    &:nth-child(1){
+        background-image: url('../../src/Images/backgrounds/background\ \(3\).png');
+    }
+    &__second{
+        background-image: url('../../src/Images/backgrounds/background\ \(2\).png');
+    }
+    &__title{
+        @include titulos($blanco);
+        font-size: 6rem;
+        margin-bottom: 20px;
+    }
+    &__descripcion{
+        color: $blanco;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+}

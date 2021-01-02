@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COMO</title>
     <link rel="shortcut icon" href="https://orientevota.com/wp-content/uploads/logo-pagina-web-300x288.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
   </head>
   <body>
     <header class="header">
@@ -34,20 +35,19 @@
     <p class="informacion__descripcion">
        Con estilo, potente y divertida, la Turbo como te hace sentir bien. La conducción es <br>tan suave y cómoda como parece, y su diseño eficiente te ayuda a sacar el máximo <br>provecho en cada pedaleada. Esta bici te hará sonreír más y sudar menos.</p>
   </section>
-  <section class="informacionProduct">
+  <section class="informacionProduct informacionProduct--black">
     <div class="columna"><img src="../src/Images/Products/Motor.png" alt="Motor"></div>
     <div class="columna">
-      <h2 class="informacionProduct__title">POTENCIA SUAVE</h2>
-      <h3 class="informacionProduct__descripcion">
-         Los motores Specialized son suaves, potentes <br>y silenciosos. El exclusivo sistema Rx Street Tune de <br>la Turbo Como está optimizado para pedalear en la <br>ciudad. Así cuando comiences desde parado<br>, despegarás rápidamente, de manera fácil y segura.</h3>
+      <h2 class="informacionProduct__title informacionProduct__title--first">POTENCIA SUAVE</h2>
+      <h3 class="informacionProduct__descripcion informacionProduct__descripcion--first">Los motores Specialized son suaves, potentes <br>y silenciosos. El exclusivo sistema Rx Street Tune de <br>la Turbo Como está optimizado para pedalear en la <br>ciudad. Así cuando comiences desde parado<br>, despegarás rápidamente, de manera fácil y segura.</h3>
       <div class="columna__details">
         <div class="columna__details__column">
-          <p class="columna__details__column__indicator">POTENCIA</p>
-          <h4 class="columna__details__column__info">4x Tú</h4>
+          <p class="columna__details__column__indicator columna__details__column__indicator--first">POTENCIA</p>
+          <h4 class="columna__details__column__info columna__details__column__info--first">4x Tú</h4>
         </div>
         <div class="columna__details__column">
-          <p class="columna__details__column__indicator">PESO</p>
-          <h4 class="columna__details__column__info">3.4kg</h4>
+          <p class="columna__details__column__indicator columna__details__column__indicator--first">PESO</p>
+          <h4 class="columna__details__column__info columna__details__column__info--first">3.4kg</h4>
         </div>
       </div>
     </div>
@@ -55,22 +55,22 @@
   <section class="informacionProduct">
     <div class="columna"><img src="../src/Images/Products/Termometer.png" alt="Motor"></div>
     <div class="columna">
-      <h2 class="informacionProduct__title">SIEMPRE EN MOVIMIENTO</h2>
-      <h3 class="informacionProduct__descripcion">
+      <h2 class="informacionProduct__title informacionProduct__title--second">SIEMPRE EN MOVIMIENTO</h2>
+      <h3 class="informacionProduct__descripcion informacionProduct__descripcion--second">
          La batería de la Turbo Como no te dejará varado<br>,  y contiene energía de sobra para llevarte a todo <br>lugar. La batería bloqueable e integrada es tan <br>fácil de quitar, como de cargar.</h3>
       <div class="columna__details">
         <div class="columna__details__column">
-          <p class="columna__details__column__indicator">POTENCIA</p>
-          <h4 class="columna__details__column__info">600 Wh</h4>
+          <p class="columna__details__column__indicator columna__details__column__indicator--second">POTENCIA</p>
+          <h4 class="columna__details__column__info columna__details__column__info--second">600 Wh</h4>
         </div>
         <div class="columna__details__column">
-          <p class="columna__details__column__indicator">TIEMPO DE CARGA</p>
-          <h4 class="columna__details__column__info">4h40m</h4>
+          <p class="columna__details__column__indicator columna__details__column__indicator--second">TIEMPO DE CARGA</p>
+          <h4 class="columna__details__column__info columna__details__column__info--second">4h40m</h4>
         </div>
       </div>
     </div>
   </section>
-  <section class="informacion">
+  <section class="informacion informacion__second">
     <h2 class="informacion__title">COMPRA EL EQUIPO</h2>
     <p class="informacion__descripcion">
        Lorem ipsum dolor sit amet, consectetur adipiscing adipiscing elit.</p>
@@ -91,27 +91,27 @@
       <div class="formulario">
         <form action="">
           <label for="formulario de Nombre Completo">
-            <input type="text" placeholder="Nombre Completo"/>
+            <input class="formulario__inputs_text" type="text" placeholder="Nombre Completo"/>
           </label>
           <label for="formulario de Ciudad">
-            <input type="text" placeholder="Ciudad"/>
+            <input class="formulario__inputs_text" type="text" placeholder="Ciudad"/>
           </label>
           <label for="formulario de E-mail">
-            <input type="email" placeholder="E-mail"/>
+            <input class="formulario__inputs_text" type="email" placeholder="E-mail"/>
           </label>
           <label for="formulario de Celular">
-            <input type="text" placeholder="Celular"/>
+            <input class="formulario__inputs_text" type="text" placeholder="Celular"/>
           </label>
           <label for="formulario de Mensaje">
-            <input type="text" placeholder="Mensaje"/>
+            <input class="formulario__inputs_text" type="text" placeholder="Mensaje"/>
           </label>
           <label for="UseDates">
-            <input id="UseDates" type="checkbox" name="UseDates"><span class="formulario__checkboxinfo">Acepto el uso de mis datos</span>
+            <input class="formulario__checkbox" id="UseDates" type="checkbox" name="UseDates"><span class="formulario__checkboxinfo">Acepto el uso de mis datos</span>
           </label>
           <label for="MeInterting">
-            <input id="MeInterting" type="checkbox" name="MeInterting"><span class="formulario__checkboxinfo">Me interesa recibir información de la marca</span>
+            <input class="formulario__checkbox" id="MeInterting" type="checkbox" name="MeInterting"><span class="formulario__checkboxinfo">Me interesa recibir información de la marca</span>
           </label>
-          <input id="enviarFormulario" type="submit" value="ENVIAR">
+          <input class="formulario__submit" id="enviarFormulario" type="submit" value="ENVIAR">
         </form>
       </div>
     </section>

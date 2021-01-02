@@ -22,12 +22,12 @@ footer.footer
                 +inputs('Celular' , 'text')
                 +inputs('Mensaje' , 'text')
                 label(for="UseDates")
-                    input#UseDates(type="checkbox", name="UseDates")
+                    input#UseDates(type="checkbox", name="UseDates",class="formulario__checkbox")
                     span.formulario__checkboxinfo Acepto el uso de mis datos
                 label(for="MeInterting")
-                    input#MeInterting(type="checkbox", name="MeInterting")
+                    input#MeInterting(type="checkbox", name="MeInterting" , class="formulario__checkbox")
                     span.formulario__checkboxinfo Me interesa recibir información de la marca
-                input#enviarFormulario(type="submit", value="ENVIAR")
+                input#enviarFormulario(class="formulario__submit" , type="submit", value="ENVIAR")
     section.contentAfter
         .contentAfter__line
         .contentAfter__final

@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: monospace;
+}
+
+.header {
+  background-image: url("../../src/Images/backgrounds/header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header__content {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+}
+.headergrid__image {
+  width: 60%;
+  height: auto;
+  padding-top: 40px;
+  padding-left: 40px;
+  margin-bottom: 150px;
+}
+.header__nav__list {
+  padding-left: 40px;
+  list-style: none;
+  margin-bottom: 150px;
+}
+.header__nav__list__item {
+  font-size: 1.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
+}
+.header__nav__list__item:hover {
+  color: #fff;
+}
+.header__grid--column:nth-child(2) {
+  margin: auto 0;
+}
+.header__title {
+  font-size: 6rem;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.header__slogan {
+  font-size: 1.8rem;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.header__button {
+  max-width: 150px;
+  text-align: center;
+  margin: 40px auto;
+  padding: 10px;
+  font-size: 1.8rem;
+  background-color: #EE1C25;
+  border: none;
+  color: #fff;
+  display: block;
+}
+
+.informacion {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 25%;
+}
+.informacion:nth-child(1) {
+  background-image: url("../../src/Images/backgrounds/background (3).png");
+}
+.informacion__second {
+  background-image: url("../../src/Images/backgrounds/background (2).png");
+}
+.informacion__title {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 6rem;
+  margin-bottom: 20px;
+}
+.informacion__descripcion {
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.informacionProduct {
+  display: flex;
+}
+.informacionProduct--black {
+  background-color: #121212;
+}
+.informacionProduct .columna {
+  width: 50%;
+}
+.informacionProduct .columna__details {
+  margin: 15% auto 30%;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.informacionProduct .columna__details__column__indicator {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.informacionProduct .columna__details__column__indicator--first {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.informacionProduct .columna__details__column__indicator--second {
+  color: #121212;
+  text-align: center;
+  text-transform: uppercase;
+}
+.informacionProduct .columna__details__column__info {
+  font-size: 2.3rem;
+  text-align: center;
+  font-weight: 500;
+}
+.informacionProduct .columna__details__column__info--first {
+  color: #fff;
+}
+.informacionProduct .columna__details__column__info--second {
+  color: #121212;
+}
+.informacionProduct img {
+  width: 80%;
+  padding: 5% 0;
+  margin: 0 auto;
+  display: block;
+  height: auto;
+}
+.informacionProduct__title {
+  margin: 10% 0;
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+.informacionProduct__title--first {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.informacionProduct__title--second {
+  color: #121212;
+  text-align: center;
+  text-transform: uppercase;
+}
+.informacionProduct__descripcion {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: normal;
+}
+.informacionProduct__descripcion--first {
+  color: #fff;
+}
+.informacionProduct__descripcion--second {
+  color: #121212;
+}
+
+footer {
+  background-color: #000000;
+  color: #fff;
+}
+
+.contentBefore {
+  display: flex;
+  justify-content: space-around;
+}
+.contentBefore__information__title {
+  font-size: 4rem;
+  margin-bottom: 50px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.contentBefore__information__description {
+  font-size: 1.8rem;
+  font-weight: 100;
+}
+.contentBefore__information_Socialred {
+  margin: 50px 0;
+  display: flex;
+}
+.contentBefore__information_Socialred p {
+  margin: auto 20px;
+  font-size: 1.6rem;
+}
+.contentBefore .information {
+  width: 40%;
+  margin: 10% 0 6%;
+}
+.contentBefore .formulario {
+  width: 40%;
+  margin: 10% 0 6%;
+}
+.contentBefore .formulario__inputs_text {
+  border: none;
+  border-bottom: 1px solid #707070;
+  background: transparent;
+  width: 50%;
+  margin: 0 auto 40px;
+  font-size: 1.5rem;
+  display: block;
+}
+.contentBefore .formulario__inputs_text:hover {
+  border-bottom: 1px solid #fff;
+}
+.contentBefore .formulario label:nth-of-type(6), .contentBefore .formulario label:nth-of-type(7) {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 260px;
+}
+.contentBefore .formulario__checkboxinfo {
+  margin: auto 20px;
+}
+.contentBefore .formulario__submit {
+  padding: 10px 70px;
+  margin: 70px auto 0;
+  font-size: 1.8rem;
+  background-color: #EE1C25;
+  border: none;
+  color: #fff;
+  display: block;
+}
+.contentAfter__line {
+  background-color: #707070;
+  width: 90%;
+  margin: 0 auto;
+  height: 1px;
+}
+.contentAfter__final {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.contentAfter__final__information {
+  font-size: 1.6rem;
+}
+.contentAfter__final__SocialReds {
+  margin-left: auto;
+}
+.contentAfter__final__SocialReds img {
+  display: inline-block;
+  margin: 0 auto;
+  margin-left: 50px;
+}
+
+/*Contenido a completar:
+    -Checkboxes transparentes
+    -Iconos centrados
+    -Poner el footer como @import
+*/
+
+/*# sourceMappingURL=index.css.map */
