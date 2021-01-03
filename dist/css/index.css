@@ -9,6 +9,20 @@ html {
   font-family: monospace;
 }
 
+.contentBefore .formulario__checkbox__decoration--active, .contentBefore .formulario__checkbox__decoration {
+  border-radius: 15px;
+  width: 15px;
+  height: 15px;
+}
+
+.carousel_back__items__item__galery--inactive, .carousel_back__items__item__galery--active {
+  margin: 0 15px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #000000;
+  border-radius: 15px;
+}
+
 .header {
   background-image: url("../../src/Images/backgrounds/header.png");
   background-repeat: no-repeat;
@@ -163,6 +177,76 @@ html {
   color: #121212;
 }
 
+.carousel_back {
+  margin: 5% auto 0;
+}
+.carousel_back__items {
+  display: flex;
+  overflow: hidden;
+  transition: 1s;
+}
+.carousel_back__items::-webkit-scrollbar {
+  display: none;
+}
+.carousel_back__items__item {
+  margin: 0 60px;
+}
+.carousel_back__items__item img {
+  width: 280px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+}
+.carousel_back__items__item__title {
+  color: #121212;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 100;
+  margin: 20px 0;
+}
+.carousel_back__items__item__price {
+  font-size: 1.7rem;
+  text-align: center;
+}
+.carousel_back__items__item__galery {
+  display: flex;
+  margin: 50px 0 0;
+  justify-content: center;
+}
+.carousel_back__items__item__galery--active {
+  background-color: #538DB0;
+}
+.carousel_back__button {
+  display: block;
+  margin: 5% auto;
+  max-width: 350px;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1.8rem;
+  background-color: #000000;
+  border: none;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+}
+.carousel_back__controls {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+.carousel_back__controls button {
+  background: transparent;
+  margin: auto 30px;
+  text-transform: uppercase;
+  border: none;
+  font-size: 3.5rem;
+  transform: translateY(150px);
+}
+
 footer {
   background-color: #000000;
   color: #fff;
@@ -206,18 +290,34 @@ footer {
   width: 50%;
   margin: 0 auto 40px;
   font-size: 1.5rem;
+  color: #fff;
   display: block;
 }
 .contentBefore .formulario__inputs_text:hover {
   border-bottom: 1px solid #fff;
 }
 .contentBefore .formulario label:nth-of-type(6), .contentBefore .formulario label:nth-of-type(7) {
-  display: block;
+  display: flex;
   margin: 0 auto 20px;
   max-width: 260px;
 }
+.contentBefore .formulario__checkbox {
+  opacity: 0.01;
+  position: absolute;
+  z-index: -1;
+}
+.contentBefore .formulario__checkbox__decoration {
+  background: transparent;
+  border: 1px solid #707070;
+}
+.contentBefore .formulario__checkbox__decoration--active {
+  background-color: #538DB0;
+  border: 1px solid #fff;
+}
 .contentBefore .formulario__checkboxinfo {
   margin: auto 20px;
+  display: inline-block;
+  font-size: 1.1rem;
 }
 .contentBefore .formulario__submit {
   padding: 10px 70px;
@@ -245,17 +345,15 @@ footer {
 }
 .contentAfter__final__SocialReds {
   margin-left: auto;
+  display: flex;
+}
+.contentAfter__final__SocialReds__images {
+  margin: auto 0;
 }
 .contentAfter__final__SocialReds img {
   display: inline-block;
   margin: 0 auto;
   margin-left: 50px;
 }
-
-/*Contenido a completar:
-    -Checkboxes transparentes
-    -Iconos centrados
-    -Poner el footer como @import
-*/
 
 /*# sourceMappingURL=index.css.map */

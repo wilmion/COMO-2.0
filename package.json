@@ -8,6 +8,7 @@
     "build:pug": "pug --pretty ./public/index.pug",
     "build:sass": "sass ./src/sass/index.scss ./dist/css/index.css",
     "build": "webpack --mode production",
+    "buildlive": "webpack --watch --mode production",
     "build:sasslive": "sass --watch ./src/sass/index.scss ./dist/css/index.css"
   },
   "keywords": [

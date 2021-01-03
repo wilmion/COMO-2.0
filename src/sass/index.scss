@@ -26,101 +26,20 @@ html{
     text-transform: uppercase;
 
 }
+%checkboxes{
+    border-radius: 15px;
+    width: 15px;
+    height: 15px;
+}
+%points-galery {
+    margin: 0 15px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid $negro;
+    border-radius: 15px;
+}
 @import "./templates/header.scss";
 @import "./templates/information.scss";
 @import "./templates/products.scss";
-footer{
-    background-color: $negro;
-    color: $blanco;
-}
-.content{
-    &Before{
-        display: flex;
-        justify-content: space-around;
-        &__information{
-            
-            &__title{
-                font-size: 4rem;
-                margin-bottom: 50px;
-                @include titulos($blanco);
-            }
-            &__description {
-                font-size: 1.8rem;
-                font-weight: 100;
-            }
-            &_Socialred{
-                margin: 50px 0;
-                display:flex;
-                p{
-                    margin: auto 20px;
-                    font-size: 1.6rem;
-                }
-            }
-        }
-        .information{
-            width: 40%;
-            margin: 10% 0 6%;
-        }
-        .formulario{
-            width: 40%;
-            margin: 10% 0 6%;
-            &__inputs_text{
-                border: none;
-                border-bottom: 1px solid $inputs;
-                background: transparent;
-                width: 50%;
-                margin: 0 auto 40px;
-                font-size: 1.5rem;
-                display: block;
-                &:hover{
-                    border-bottom: 1px solid $blanco;
-                }
-            }
-            label:nth-of-type(6) , label:nth-of-type(7){
-                display: block;
-                margin: 0 auto 20px;
-                max-width: 260px;
-            }
-            &__checkbox{
-                &info{
-                    margin: auto 20px;
-                }
-            }
-            &__submit{
-                padding: 10px 70px;
-                margin: 70px auto 0;
-                @include buttons($color-secundario, $blanco);
-            }
-        }
-    }
-    &After{
-        &__line{
-            background-color: $inputs;
-            width: 90%;
-            margin: 0 auto ;
-            height: 1px;
-        }
-        &__final{
-            display: flex;
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px 0;
-            &__information{
-                font-size: 1.6rem;
-            }
-            &__SocialReds{
-                margin-left: auto;
-                img{
-                    display: inline-block;
-                    margin: 0 auto;
-                    margin-left: 50px;
-                }
-            }
-        }
-    }
-}
-/*Contenido a completar:
-    -Checkboxes transparentes
-    -Iconos centrados
-    -Poner el footer como @import
-*/
+@import "./templates/carousel_back.scss";
+@import "./templates/footer.scss";

@@ -1,0 +1,69 @@
+.carousel_back{
+    margin: 5% auto 0;
+    &__items{
+        display: flex;
+        overflow: hidden;
+        transition: 1s;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        &__item{
+            margin: 0 60px;
+            img {
+                width: 280px;
+                height: auto;
+                display: block;
+                margin: 0 auto 20px;
+            }
+            &__title{
+                @include titulos($color-primario);
+                font-size: 2.5rem;
+                font-weight: 100;
+                margin: 20px 0;
+            }
+            &__price {
+                font-size: 1.7rem;
+                text-align: center;
+            }
+            &__galery{
+                display: flex;
+                margin: 50px 0 0;
+                justify-content: center;
+                &--active{
+                    @extend %points-galery;
+                    background-color: $points;
+                }
+                &--inactive{
+                    @extend %points-galery;
+                }
+            }
+        }
+    }
+    &__button{
+        display: block;
+        margin: 5% auto;
+        max-width: 350px;
+        text-align: center;
+        padding: 10px 0;
+        @include buttons($negro , $blanco);
+        text-decoration: none;
+        
+    }
+    &__controls{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        
+        button{
+            background: transparent;
+            margin: auto 30px;
+            text-transform: uppercase;
+            border: none;
+            font-size: 3.5rem;
+            transform: translateY(150px);
+        }
+    }
+}

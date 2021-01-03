@@ -1,2 +1,2 @@
-import { setUrlsImg } from './components/links_images';
-setUrlsImg();
+import { AddEventListenerClickAccions } from './components/checkboxes';
+AddEventListenerClickAccions();
