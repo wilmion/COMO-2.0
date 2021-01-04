@@ -15,7 +15,7 @@ html {
   height: 15px;
 }
 
-.carousel_back__items__item__galery--inactive, .carousel_back__items__item__galery--active {
+.carousel_back__items__item__galery--inactive, .carousel_back__items__item__galery--active, .carousel_up__galery-points--point--active, .carousel_up__galery-points--point {
   margin: 0 15px;
   width: 15px;
   height: 15px;
@@ -79,12 +79,82 @@ html {
   display: block;
 }
 
+.carousel_up {
+  background-color: #121212;
+}
+.carousel_up__controls {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 1;
+}
+.carousel_up__controls button {
+  background: transparent;
+  color: #fff;
+  font-size: 3rem;
+  border: none;
+  margin: 0 100px;
+  transform: translateY(50px);
+}
+.carousel_up__items {
+  overflow: hidden;
+  display: flex;
+}
+.carousel_up__items::-webkit-scrollbar {
+  display: none;
+}
+.carousel_up__items__item {
+  margin: 0 130px;
+}
+.carousel_up__items__item .active {
+  width: 450px;
+  opacity: 1;
+}
+.carousel_up__items__item img {
+  width: 350px;
+  opacity: 0.5;
+  height: auto;
+  display: block;
+  transition: 500ms;
+  margin: auto 0;
+}
+.carousel_up__items__item .relleno {
+  opacity: 0;
+}
+.carousel_up__galery-points {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+.carousel_up__galery-points--point {
+  border: 1px solid #fff;
+}
+.carousel_up__galery-points--point--active {
+  background-color: #538DB0;
+  border: 1px solid #fff;
+}
+.carousel_up__information {
+  padding: 30px 0;
+}
+.carousel_up__information__title {
+  font-size: 4.5rem;
+  margin: 0 0 30px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.carousel_up__information__parrafo {
+  color: #fff;
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 0 0 30px;
+}
+
 .informacion {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 25%;
-}
-.informacion:nth-child(1) {
   background-image: url("../../src/Images/backgrounds/background (3).png");
 }
 .informacion__second {
@@ -233,7 +303,6 @@ html {
 .carousel_back__controls {
   display: flex;
   justify-content: space-between;
-  position: relative;
   position: absolute;
   z-index: 1;
   width: 100%;

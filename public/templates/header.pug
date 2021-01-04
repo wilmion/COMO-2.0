@@ -12,12 +12,15 @@ mixin pictures(rute , speach)
 mixin CarouselItemBack( rute , title , price , alt , inactive)
     .carousel_back__items__item
             picture
-                img(src=`../${rute}`, alt=`${alt}`)
+                img.carousel_back__items__item--image(src=`../${rute}`, alt=`${alt}`)
             h2.carousel_back__items__item__title #{title}
             h3.carousel_back__items__item__price #{price}
             .carousel_back__items__item__galery
                 .carousel_back__items__item__galery--active
                 .carousel_back__items__item__galery--inactive
+mixin CarouselItemUp(rute , alt)
+    .carousel_up__items__item
+        img(src=`../${rute}`, alt=`${alt}`)
 -var navigation = ['> COMO' , 'VADO' , 'VADO SL']
 
 doctype html
