@@ -1,0 +1,40 @@
+.informacionProduct {
+    display: block;
+    .columna{
+        width: 90%;
+        margin: 0 auto;
+        &__details{
+            margin: 15% auto 30%;
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+            &__column__indicator{
+                font-size: 1.4rem;
+                font-weight: 600;
+            }
+            &__column__info{
+                font-size: 2.0rem;
+                text-align: center;
+                font-weight: 700;
+                padding-bottom: 30px;
+            }
+        }
+    }
+    img{
+        width: 90%;
+        padding: 50px 0;
+        margin: 0 auto;
+        display: block;
+        height: auto;
+    }
+    &__title{
+        margin: 10% 0;
+        font-size: 4rem;
+        margin-bottom: 20px;
+    }
+    &__descripcion{
+        font-size: 1.8rem;
+        text-align: center;
+        font-weight: normal;
+    }
+}

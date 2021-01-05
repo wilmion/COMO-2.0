@@ -6,10 +6,10 @@
   "scripts": {
     "build:total": "npm run build:pug && npm run build:sass && npm run build",
     "build:pug": "pug --pretty ./public/index.pug",
-    "build:sass": "sass ./src/sass/index.scss ./dist/css/index.css",
+    "build:sass": "node-sass ./src/sass -o ./dist/css",
     "build": "webpack --mode production",
     "buildlive": "webpack --watch --mode production",
-    "build:sasslive": "sass --watch ./src/sass/index.scss ./dist/css/index.css"
+    "build:sasslive": "node-sass --watch ./src/sass -o ./dist/css"
   },
   "keywords": [
     "COMO",
@@ -24,20 +24,20 @@
     "babel": "6.23.0",
     "babel-loader": "8.2.2",
     "css-loader": "5.0.1",
-    "html-loader": "^1.3.2",
+    "html-loader": "1.3.2",
     "html-webpack-plugin": "4.5.0",
     "html-webpack-pug-plugin": "2.0.0",
     "mini-css-extract-plugin": "1.3.3",
-    "node-sass": "5.0.0",
+    "node-sass": "^5.0.0",
     "pug": "3.0.0",
-    "pug-html-loader": "^1.1.5",
-    "sass": "^1.32.0",
+    "pug-html-loader": "1.1.5",
+    "sass": "1.32.0",
     "sass-loader": "10.1.0",
     "style-loader": "2.0.0",
     "webpack": "5.11.1",
     "webpack-cli": "4.3.0"
   },
   "dependencies": {
-    "pug-cli": "^1.0.0-alpha6"
+    "pug-cli": "1.0.0-alpha6"
   }
 }

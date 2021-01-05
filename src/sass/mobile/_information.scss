@@ -1,0 +1,14 @@
+.informacion {
+    padding: 25%;
+    background-image: url('../../src/Images/backgrounds/background\ \(3\).png');
+    &__second{
+        background-image: url('../../src/Images/backgrounds/background\ \(2\).png');
+    }
+    &__title{
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+    &__descripcion{
+        text-align: center;
+    }
+}

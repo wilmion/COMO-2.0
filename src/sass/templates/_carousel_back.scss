@@ -2,7 +2,7 @@
     margin: 5% auto 0;
     &__items{
         display: flex;
-        overflow: hidden;
+        overflow: scroll;
         transition: 1s;
         &::-webkit-scrollbar{
             display: none;

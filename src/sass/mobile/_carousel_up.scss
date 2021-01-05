@@ -1,0 +1,22 @@
+.carousel_up{
+    &__controls{
+        width: 100%;
+        button{
+            background: transparent;
+            font-size: 3.0rem;
+            margin: 0 30px;
+            transform: translateY(120px);
+        }
+    }
+    &__items{
+        &__item{
+            margin: 0 130px;
+            .active{
+                width: 300px;
+            }
+            img{
+                width: 300px;
+            }
+        }
+    }
+}

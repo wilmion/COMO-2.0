@@ -1,0 +1,39 @@
+.header {
+    height: 420px;
+    &__content{
+        display: block;      
+    }
+    &grid__image{
+        width: 50%;
+        height: auto;
+        padding-top: 40px;
+        padding-left: 40px;
+        margin-bottom: 50px;
+    }
+    &__nav__list {
+        padding-left: 0;
+        display: flex;
+        list-style: none;
+        margin-bottom: 50px;
+        justify-content: center;
+        &__item {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+    }
+    &__title {
+        font-size: 4rem;
+    }
+    &__slogan {
+        font-size: 1.5rem;
+        margin: 0 0 40px;
+    }
+    &__button {
+        max-width: 150px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+}

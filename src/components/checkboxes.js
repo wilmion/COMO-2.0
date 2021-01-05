@@ -2,17 +2,26 @@ export const AddEventListenerClickAccions = () => {
     let Inactive_element = document.querySelectorAll('.carousel_back__items__item');
     Inactive_element[0].style.opacity = "1";
     Inactive_element[3].style.opacity = "0.5";
+    const width = window.innerWidth;
 
     //Carousel Up
 
     const content = document.querySelector('.carousel_up__items');
     content.scrollLeft = 890;
+    if(width < 600){
+        const diferenceWidths = 590 - width;
+        content.scrollLeft = 1103 + (0.5 * diferenceWidths);
+    }else{
+        const diferenceWidths = 2000 - width;
+        content.scrollLeft = 579 + (0.498 * diferenceWidths);
+    }
     let ContentChildren = content.childNodes;
     let Img_carousel_up = ContentChildren[2].childNodes;
     Img_carousel_up[0].className = "active";
 
     const points_galery = document.querySelectorAll('.carousel_up__galery-points--point');
     points_galery[1].className = "carousel_up__galery-points--point--active";
+    let iteration = 1;
 
     document.addEventListener('click', (event = new Event()) => {
         let object = event.target;
@@ -30,16 +39,29 @@ export const AddEventListenerClickAccions = () => {
         
         if(object.innerText == "«" ){
             const parent = object.parentElement;
-            if(parent.className == "carousel_back__controls"){
+            if(parent.className == "carousel_back__controls" && iteration != 0){
+                iteration--;
+                console.log(iteration);
                 let Element = document.querySelector('.carousel_back__items');
+                let newScrollLeft = Element.scrollLeft;
+                if(width < 600){
+                    newScrollLeft = Element.scrollLeft - 400;
+                }else{
+                    newScrollLeft = 0;
+                }
                 Inactive_element[0].style.opacity = "1";
                 Inactive_element[3].style.opacity = "0.5";
                 Element.scrollTo({
                     top: 0,
-                    left: 0,
+                    left: newScrollLeft,
                     behavior: 'smooth'});
             }else{
-                const newScrollLeft = content.scrollLeft - 630;
+                let newScrollLeft = 0;
+                if(width < 600){
+                    newScrollLeft = content.scrollLeft - 558;
+                }else{
+                    newScrollLeft = content.scrollLeft - 630;
+                }
 
                 let ContentChildren_ = content.childNodes;
                 console.log(ContentChildren_);
@@ -67,16 +89,32 @@ export const AddEventListenerClickAccions = () => {
             
         }else if(object.innerText == "»"){
             const parent = object.parentElement;
+            
             if(parent.className == "carousel_back__controls"){
                 let Element = document.querySelector('.carousel_back__items');
+                let newScrollLeft = Element.scrollLeft;
+                if(width < 600 && iteration != 3){
+                    iteration++;
+                    newScrollLeft = Element.scrollLeft + 400;
+                }else if(width > 600){
+                    newScrollLeft = 191;
+                }
                 Inactive_element[0].style.opacity = "0.5";
                 Inactive_element[3].style.opacity = "1";
                 Element.scrollTo({
                     top: 0,
-                    left: 191,
+                    left: newScrollLeft,
                     behavior: 'smooth'});
             }else{
-                const newScrollLeft = content.scrollLeft + 630;
+                let newScrollLeft = 0;
+                if(width < 600){
+                    newScrollLeft = content.scrollLeft + 558;
+                }else{
+                    newScrollLeft = content.scrollLeft + 630;
+                }
+                
+                
+
 
                 let ContentChildren_ = content.childNodes;
                 console.log(ContentChildren_);
@@ -106,4 +144,17 @@ export const AddEventListenerClickAccions = () => {
         }
     });
 };
+export const CarouselBackInit = () => {
+    const width = window.innerWidth;
+    let Element = document.querySelector('.carousel_back__items');
+    if(width < 1100){
+        const diferense_Scroll = 1100 - width;
+        const newScroll = 42 + (0.507 * diferense_Scroll);
+        Element.scrollLeft = newScroll;
+    }else{
+
+    }
+    
+}
 /*-Obtener atributo : const atr = object.getAttribute('accept');-*/
+/*-Terminar el responsive desing del carousel Back */ 
