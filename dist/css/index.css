@@ -38,6 +38,8 @@ html {
     margin-bottom: 150px; }
     .header__nav__list__item {
       font-size: 1.8rem;
+      font-family: "DinPro";
+      font-style: italic;
       color: rgba(255, 255, 255, 0.5);
       margin-bottom: 20px; }
       .header__nav__list__item:hover {
@@ -48,16 +50,21 @@ html {
     font-size: 6rem;
     color: #fff;
     text-align: center;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: "DinProMedium";
+    font-style: italic; }
   .header__slogan {
     font-size: 1.8rem;
     color: #fff;
     text-align: center;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: "DINPro-Light";
+    font-style: italic; }
   .header__button {
     max-width: 150px;
     text-align: center;
     margin: 40px auto;
+    font-family: "DinProMedium";
     padding: 10px;
     font-size: 1.8rem;
     background-color: #EE1C25;
@@ -115,12 +122,16 @@ html {
       margin: 0 0 30px;
       color: #fff;
       text-align: center;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-family: "DinPro";
+      font-style: italic; }
     .carousel_up__information__parrafo {
       color: #fff;
       font-size: 1.8rem;
       text-align: center;
-      margin: 0 0 30px; }
+      margin: 0 0 30px;
+      font-family: "DinProMedium";
+      font-style: italic; }
 
 .informacion {
   background-repeat: no-repeat;
@@ -134,11 +145,15 @@ html {
     text-align: center;
     text-transform: uppercase;
     font-size: 6rem;
+    font-family: "DinPro";
+    font-style: italic;
     margin-bottom: 20px; }
   .informacion__descripcion {
     color: #fff;
     text-align: center;
-    font-size: 1.8rem; }
+    font-size: 1.8rem;
+    font-family: "DinProMedium";
+    font-style: italic; }
 
 .informacionProduct {
   display: flex; }
@@ -153,7 +168,9 @@ html {
       justify-content: space-around; }
       .informacionProduct .columna__details__column__indicator {
         font-size: 1.6rem;
-        font-weight: 600; }
+        font-weight: 600;
+        font-family: "DinPro";
+        font-style: italic; }
         .informacionProduct .columna__details__column__indicator--first {
           color: #fff;
           text-align: center;
@@ -165,7 +182,9 @@ html {
       .informacionProduct .columna__details__column__info {
         font-size: 2.3rem;
         text-align: center;
-        font-weight: 500; }
+        font-weight: 500;
+        font-family: "DinPro";
+        font-style: italic; }
         .informacionProduct .columna__details__column__info--first {
           color: #fff; }
         .informacionProduct .columna__details__column__info--second {
@@ -179,7 +198,9 @@ html {
   .informacionProduct__title {
     margin: 10% 0;
     font-size: 4rem;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    font-family: "DinPro";
+    font-style: italic; }
     .informacionProduct__title--first {
       color: #fff;
       text-align: center;
@@ -191,7 +212,8 @@ html {
   .informacionProduct__descripcion {
     font-size: 1.8rem;
     text-align: center;
-    font-weight: normal; }
+    font-weight: normal;
+    font-family: "DinPro"; }
     .informacionProduct__descripcion--first {
       color: #fff; }
     .informacionProduct__descripcion--second {
@@ -218,10 +240,13 @@ html {
         text-transform: uppercase;
         font-size: 2.5rem;
         font-weight: 100;
-        margin: 20px 0; }
+        margin: 20px 0;
+        font-family: "DinPro";
+        font-style: italic; }
       .carousel_back__items__item__price {
         font-size: 1.7rem;
-        text-align: center; }
+        text-align: center;
+        font-family: "DinPro"; }
       .carousel_back__items__item__galery {
         display: flex;
         margin: 50px 0 0;
@@ -266,16 +291,21 @@ footer {
     margin-bottom: 50px;
     color: #fff;
     text-align: center;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: "DinProMedium";
+    font-style: italic; }
   .contentBefore__information__description {
     font-size: 1.8rem;
-    font-weight: 100; }
+    font-weight: 100;
+    font-family: "DINPro-Light"; }
   .contentBefore__information_Socialred {
     margin: 50px 0;
     display: flex; }
     .contentBefore__information_Socialred p {
       margin: auto 20px;
-      font-size: 1.6rem; }
+      font-size: 1.6rem;
+      font-family: "DINPro-Light";
+      font-style: italic; }
   .contentBefore .information {
     width: 40%;
     margin: 10% 0 6%; }
@@ -289,6 +319,8 @@ footer {
       width: 50%;
       margin: 0 auto 40px;
       font-size: 1.5rem;
+      font-family: "DinPro";
+      font-style: italic;
       color: #fff;
       display: block; }
       .contentBefore .formulario__inputs_text:hover {
@@ -310,10 +342,12 @@ footer {
       .contentBefore .formulario__checkboxinfo {
         margin: auto 20px;
         display: inline-block;
-        font-size: 1.1rem; }
+        font-size: 1.1rem;
+        font-family: "DinPro"; }
     .contentBefore .formulario__submit {
       padding: 10px 70px;
       margin: 70px auto 0;
+      font-family: "DinProMedium";
       font-size: 1.8rem;
       background-color: #EE1C25;
       border: none;
@@ -332,7 +366,9 @@ footer {
   margin: 0 auto;
   padding: 20px 0; }
   .contentAfter__final__information {
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    font-family: "DINPro-Light";
+    font-style: italic; }
   .contentAfter__final__SocialReds {
     margin-left: auto;
     display: flex; }

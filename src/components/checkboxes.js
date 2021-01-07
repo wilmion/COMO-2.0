@@ -39,11 +39,11 @@ export const AddEventListenerClickAccions = () => {
         
         if(object.innerText == "«" ){
             const parent = object.parentElement;
-            if(parent.className == "carousel_back__controls" && iteration != 0){
+            if(parent.className == "carousel_back__controls"){
                 iteration--;
                 console.log(iteration);
                 let Element = document.querySelector('.carousel_back__items');
-                let newScrollLeft = Element.scrollLeft;
+                let newScrollLeft = 0;
                 if(width < 600){
                     newScrollLeft = Element.scrollLeft - 400;
                 }else{
@@ -64,7 +64,6 @@ export const AddEventListenerClickAccions = () => {
                 }
 
                 let ContentChildren_ = content.childNodes;
-                console.log(ContentChildren_);
                 for(let i = 0 ; i < 6 ; i++){
                     if(i == 0 || i == 1){
                         continue;
@@ -96,8 +95,9 @@ export const AddEventListenerClickAccions = () => {
                 if(width < 600 && iteration != 3){
                     iteration++;
                     newScrollLeft = Element.scrollLeft + 400;
-                }else if(width > 600){
-                    newScrollLeft = 191;
+                }
+                else if(width > 600){
+                    newScrollLeft = 1910;
                 }
                 Inactive_element[0].style.opacity = "0.5";
                 Inactive_element[3].style.opacity = "1";

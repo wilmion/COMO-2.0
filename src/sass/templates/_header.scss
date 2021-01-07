@@ -20,6 +20,8 @@
         margin-bottom: 150px;
         &__item {
             font-size: 1.8rem;
+            font-family: "DinPro";
+            font-style: italic;
             color: rgba($blanco , .5);
             margin-bottom: 20px;
             &:hover {
@@ -33,17 +35,20 @@
     &__title {
         font-size: 6rem;
         @include titulos($blanco);
-
+        font-family: "DinProMedium" ;
+        font-style: italic;
     }
     &__slogan {
         font-size: 1.8rem;
         @include titulos($blanco);
-
+        font-family: "DINPro-Light";
+        font-style: italic;
     }
     &__button {
         max-width: 150px;
         text-align: center;
         margin: 40px auto;
+        font-family: "DinProMedium";
         padding: 10px;
         @include buttons($color-secundario ,$blanco)
     }

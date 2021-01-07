@@ -12,10 +12,13 @@ footer{
                 font-size: 4rem;
                 margin-bottom: 50px;
                 @include titulos($blanco);
+                font-family: "DinProMedium";
+                font-style: italic;
             }
             &__description {
                 font-size: 1.8rem;
                 font-weight: 100;
+                font-family: "DINPro-Light";
             }
             &_Socialred{
                 margin: 50px 0;
@@ -23,6 +26,8 @@ footer{
                 p{
                     margin: auto 20px;
                     font-size: 1.6rem;
+                    font-family: "DINPro-Light";
+                    font-style: italic;
                 }
             }
         }
@@ -40,6 +45,8 @@ footer{
                 width: 50%;
                 margin: 0 auto 40px;
                 font-size: 1.5rem;
+                font-family: "DinPro";
+                font-style: italic;
                 color: $blanco;
                 display: block;
                 &:hover{
@@ -69,11 +76,13 @@ footer{
                     margin: auto 20px;
                     display: inline-block;
                     font-size: 1.1rem;
+                    font-family: "DinPro";
                 }
             }
             &__submit{
                 padding: 10px 70px;
                 margin: 70px auto 0;
+                font-family: "DinProMedium";
                 @include buttons($color-secundario, $blanco);
             }
         }
@@ -92,6 +101,8 @@ footer{
             padding: 20px 0;
             &__information{
                 font-size: 1.6rem;
+                font-family: "DINPro-Light";
+                font-style: italic;
             }
             &__SocialReds{
                 margin-left: auto;

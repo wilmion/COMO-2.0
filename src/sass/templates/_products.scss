@@ -13,6 +13,8 @@
             &__column__indicator{
                 font-size: 1.6rem;
                 font-weight: 600;
+                font-family: "DinPro";
+                font-style: italic;
                 &--first{
                     @include titulos($blanco);
                 }
@@ -24,6 +26,8 @@
                 font-size: 2.3rem;
                 text-align: center;
                 font-weight: 500;
+                font-family: "DinPro";
+                font-style: italic;
                 &--first{
                     color: $blanco;
                 }
@@ -44,6 +48,8 @@
         margin: 10% 0;
         font-size: 4rem;
         margin-bottom: 20px;
+        font-family: "DinPro";
+        font-style: italic;
         &--first{
             @include titulos($blanco);
         }
@@ -55,6 +61,7 @@
         font-size: 1.8rem;
         text-align: center;
         font-weight: normal;
+        font-family: "DinPro";
         &--first{
             color: $blanco;
         }

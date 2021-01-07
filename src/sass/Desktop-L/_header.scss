@@ -1,0 +1,18 @@
+.header {
+    &grid__image{
+        width: 50%;
+    }
+    &__nav__list {
+        &__item {
+            font-size: 2.8rem;
+        }
+    }
+    &__title {
+        font-size: 7rem;
+
+    }
+    &__slogan {
+        font-size: 2.8rem;
+    }
+
+}

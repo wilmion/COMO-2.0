@@ -1,0 +1,25 @@
+.carousel_back{
+    &__items{
+        &__item{
+            margin: 0 80px;
+            img {
+                width: 410px;
+                margin: 0 auto 20px;
+            }
+            &__title{
+                font-size: 3.5rem;
+                font-weight: 100;
+                margin: 50px 0;
+            }
+            &__price {
+                font-size: 2.5rem;
+            }
+        }   
+    }
+    &__controls{    
+        button{
+            font-size: 4.5rem;
+
+        }
+    }
+}

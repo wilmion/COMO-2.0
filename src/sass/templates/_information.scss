@@ -9,11 +9,15 @@
     &__title{
         @include titulos($blanco);
         font-size: 6rem;
+        font-family: "DinPro";
+        font-style: italic;
         margin-bottom: 20px;
     }
     &__descripcion{
         color: $blanco;
         text-align: center;
         font-size: 1.8rem;
+        font-family: "DinProMedium";
+        font-style: italic;
     }
 }

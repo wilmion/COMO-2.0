@@ -1,0 +1,39 @@
+.content{
+    &Before{
+        &__information{
+            &__title{
+                font-size: 5rem;
+                margin-bottom: 50px;
+            }
+            &__description {
+                font-size: 2.2rem;
+                font-weight: 100;
+            }
+            &_Socialred{
+                p{
+                    font-size: 2.3rem;
+                }
+            }
+        }
+        .formulario{
+            &__inputs_text{
+                font-size: 2.2rem;
+            }
+            &__checkbox{
+                width: 100%;
+                &info{
+                    margin: auto 20px;
+                    font-size: 1.7rem;
+                    
+                }
+            }
+        }
+    }
+    &After{
+        &__final{
+            &__information{
+                font-size: 2.3rem;
+            }
+        }
+    }
+}
