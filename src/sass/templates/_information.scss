@@ -2,9 +2,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 25%;
-    background-image: url('../../src/Images/backgrounds/background\ \(3\).png');
+    background-image: url('/src/Images/backgrounds/background\ \(2\).jpg');
     &__second{
-        background-image: url('../../src/Images/backgrounds/background\ \(2\).png');
+        background-image: url('/src/Images/backgrounds/background\ \(3\).jpg');
     }
     &__title{
         @include titulos($blanco);

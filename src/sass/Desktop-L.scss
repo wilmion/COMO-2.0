@@ -1,5 +1,7 @@
-@import './Desktop-L/header.scss';
-@import './Desktop-L/informacion';
-@import './Desktop-L/products';
-@import './Desktop-L/carousel_back';
-@import './Desktop-L/footer';
+@media only screen and (min-width: 1440px){
+    @import './Desktop-L/header.scss';
+    @import './Desktop-L/informacion';
+    @import './Desktop-L/products';
+    @import './Desktop-L/carousel_back';
+    @import './Desktop-L/footer';
+}

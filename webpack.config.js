@@ -1,28 +1,93 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
-const webpack = require('webpack');
-
+const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const  { CleanWebpackPlugin }  =  require ( 'clean-webpack-plugin' ) ;
 module.exports = {
-    entry : path.resolve(__dirname , './src/index.js'),
-    output : {
-        path: path.resolve(__dirname , 'dist/'),
-        filename : 'js/[name].js'
+    entry: './src/index.js',
+    output: {
+        publicPath: './',
+        path : path.resolve(__dirname , 'dist'),
+        filename: '[hash].js'
+    },
+    resolve: {
+        extensions : ['.js' , '.jsx']
+    },
+    optimization: {
+        minimizer: [
+          new CssMinimizerPlugin(),
+        ],
     },
     module: {
-        rules: [
+        rules:[
             {
-                test: /\.js$/,
-                use: 'babel-loader',
-                exclude: /node_modules/      
+                test: /\.(js|jsx)$/,
+                exclude: /node_modules/,
+                use:{
+                    loader: 'babel-loader'
+                }
+            },
+            {
+                test: /\.html$/,
+                use:[
+                    {
+                        loader: 'html-loader'
+                    }
+                ]
+            },
+            {
+                test : /\.(s*)css$/,
+                use : [
+                    {
+                        loader: MiniCSSExtractPlugin.loader,
+                        options: {
+                            publicPath: '../',
+                            esModule: true,
+                            modules: {
+                                namedExport: true,
+                            },
+                        }
+                    },
+                    'css-loader',
+                    'sass-loader'
+                ]
+            },
+            {
+                test: /\.(jpe?g|png|gif|svg)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[hash][name].[ext]',
+                            outputPath: "assets/images/",
+                        }
+                    }
+                ]
+            },
+            {
+                test: /\.(svg|eot|woff|otf|ttf)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[hash][name].[ext]',
+                            outputPath: "assets/fonts/",
+                        }
+                    }
+                ]
             }
         ]
     },
     plugins: [
+        new  CleanWebpackPlugin (), 
         new HtmlWebpackPlugin({
-            filename : path.resolve(__dirname , './dist/index.html'),
-            template : path.resolve(__dirname , './public/index.html'),
+            filename: './index.html',
+            template: path.resolve(__dirname , 'public/index.html')
         }),
-        new HtmlWebpackPugPlugin()
+        new MiniCSSExtractPlugin({
+            filename: 'css/[hash][id].css',
+            linkType: 'text/css',
+            chunkFilename: '[hash].css'
+        })
     ]
 }

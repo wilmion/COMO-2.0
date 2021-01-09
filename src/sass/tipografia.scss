@@ -4,9 +4,9 @@
         src: url($url);
     }
 }
-@include crear('../../src/fonts/DINPro-Light.ttf', 'DINPro-Light');
-@include crear('../../src/fonts/DINPro-Medium.otf', 'DinProMedium');
-@include crear('../../src/fonts/DINPro.ttf', 'DinPro');
+@include crear('/src/fonts/DINPro-Light.ttf', 'DINPro-Light');
+@include crear('/src/fonts/DINPro-Medium.otf', 'DinProMedium');
+@include crear('/src/fonts/DINPro.ttf', 'DinPro');
 /* parrafos => DINPro-Light
 informaton =>DinProMedium
 product => DinPro */

@@ -1,6 +1,8 @@
-@import "./mobile/header";
-@import "./mobile/information";
-@import "./mobile/products";
-@import "./mobile/footer";
-@import "./mobile/carousel_up";
-@import "./mobile/carousel_back";
+@media only screen and (max-width : 600px){
+    @import "./mobile/header";
+    @import "./mobile/information";
+    @import "./mobile/products";
+    @import "./mobile/footer";
+    @import "./mobile/carousel_up";
+    @import "./mobile/carousel_back";
+}

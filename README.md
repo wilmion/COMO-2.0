@@ -11,15 +11,15 @@ Pagina del Proyecto = [COMO Page](https://wilmion.github.io/COMO/dist/ "COMO Pag
 ### Comandos
 1. Construir el Proyecto :
 	```bash
-    npm run build:total
+    npm run build
     ```
-2. Construir los archivos sass en vivo
+2. Servidor de dessarrollo
 	```bash
-    npm run build:sasslive
+    npm start || npm run start
     ```
-3. Construir los archivos de webpack en vivo
+3. Construir el archivo de pug
 	```bash
-    npm run buildlive
+    npm run pug
     ```
 
 ### Importante
