@@ -75,7 +75,7 @@ var AddEventListenerClickAccions = function AddEventListenerClickAccions() {
   }
 
   var ContentChildren = content.childNodes;
-  var Img_carousel_up = ContentChildren[2].childNodes;
+  var Img_carousel_up = ContentChildren[2].children;
   Img_carousel_up[0].className = "active";
   var points_galery = document.querySelectorAll('.carousel_up__galery-points--point');
   points_galery[1].className = "carousel_up__galery-points--point--active";
@@ -84,7 +84,7 @@ var AddEventListenerClickAccions = function AddEventListenerClickAccions() {
     var event = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : new Event();
     var object = event.target; //checkbox
 
-    if (object.className == "formulario__checkbox__decoration") {
+    if (object["class"] == "formulario__checkbox__decoration") {
       object.className = "formulario__checkbox__decoration--active";
       object.setAttribute('accept', 'true');
     } else if (object.className == "formulario__checkbox__decoration--active") {
@@ -109,7 +109,9 @@ var AddEventListenerClickAccions = function AddEventListenerClickAccions() {
         }
 
         Inactive_element[0].style.opacity = "1";
+        Inactive_element[0].tabIndex = 0;
         Inactive_element[3].style.opacity = "0.5";
+        Inactive_element[3].tabIndex = -1;
         Element.scrollTo({
           top: 0,
           left: newScrollLeft,
@@ -124,7 +126,7 @@ var AddEventListenerClickAccions = function AddEventListenerClickAccions() {
           _newScrollLeft = content.scrollLeft - 630;
         }
 
-        var ContentChildren_ = content.childNodes;
+        var ContentChildren_ = content.children;
 
         for (var i = 0; i < 6; i++) {
           if (i == 0 || i == 1) {
@@ -133,11 +135,12 @@ var AddEventListenerClickAccions = function AddEventListenerClickAccions() {
 
           var Img_carousel_up_ = ContentChildren_[i].childNodes;
           var Img_carousel_up_next = ContentChildren_[i - 1].childNodes;
-          console.log(i);
 
           if (Img_carousel_up_[0].className == "active") {
             Img_carousel_up_[0].className = "";
+            Img_carousel_up_[0].tabIndex = -1;
             Img_carousel_up_next[0].className = "active";
+            Img_carousel_up_next[0].tabIndex = 0;
             points_galery[i - 1].className = "carousel_up__galery-points--point";
             points_galery[i - 2].className = "carousel_up__galery-points--point--active";
             content.scrollTo({
@@ -165,7 +168,9 @@ var AddEventListenerClickAccions = function AddEventListenerClickAccions() {
         }
 
         Inactive_element[0].style.opacity = "0.5";
+        Inactive_element[0].tabIndex = -1;
         Inactive_element[3].style.opacity = "1";
+        Inactive_element[3].tabIndex = 0;
 
         _Element.scrollTo({
           top: 0,
@@ -181,8 +186,7 @@ var AddEventListenerClickAccions = function AddEventListenerClickAccions() {
           _newScrollLeft3 = content.scrollLeft + 630;
         }
 
-        var _ContentChildren_ = content.childNodes;
-        console.log(_ContentChildren_);
+        var _ContentChildren_ = content.children;
 
         for (var _i = 0; _i < 4; _i++) {
           if (_i == 3) {
@@ -191,11 +195,12 @@ var AddEventListenerClickAccions = function AddEventListenerClickAccions() {
 
           var _Img_carousel_up_ = _ContentChildren_[_i + 1].childNodes;
           var _Img_carousel_up_next = _ContentChildren_[_i + 2].childNodes;
-          console.log(_i);
 
           if (_Img_carousel_up_[0].className == "active") {
             _Img_carousel_up_[0].className = "";
+            _Img_carousel_up_[0].tabIndex = -1;
             _Img_carousel_up_next[0].className = "active";
+            _Img_carousel_up_next[0].tabIndex = 0;
             points_galery[_i].className = "carousel_up__galery-points--point";
             points_galery[_i + 1].className = "carousel_up__galery-points--point--active";
             content.scrollTo({
