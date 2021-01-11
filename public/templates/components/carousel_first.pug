@@ -1,17 +1,17 @@
 section.carousel_up
     section.carousel_up__controls
-        button «
-        button »
+        button(aria-label="boton para item previo", tabindex="0") «
+        button(aria-label="boton para item siguiente" , tabindex="0") »
     section.carousel_up__information
-        h2.carousel_up__information__title 3.0 LOW ENTRY
-        p.carousel_up__information__parrafo Fácil de subir, máxima comodidad
+        h2.carousel_up__information__title(tabindex="0") 3.0 LOW ENTRY
+        p.carousel_up__information__parrafo(tabindex="0") Fácil de subir, máxima comodidad
     section.carousel_up__items
         .carousel_up__items__item
             img(src=`../src/Images/Products/bicicleta (1).png`, alt=`asd` , class="relleno")
-        +CarouselItemUp('src/Images/Products/bicicleta (1).png' , '3.0 LOW ENTRY')
-        +CarouselItemUp('src/Images/Products/bicicleta (2).png' , '3.0 LOW ENTRY')
-        +CarouselItemUp('src/Images/Products/bicicleta (1).png' , '3.0 LOW ENTRY')
-        +CarouselItemUp('src/Images/Products/bicicleta (2).png' , '3.0 LOW ENTRY')
+        +CarouselItemUp('src/Images/Products/bicicleta (1).png' , '3.0 LOW ENTRY' , -1)
+        +CarouselItemUp('src/Images/Products/bicicleta (2).png' , '3.0 LOW ENTRY' , 0)
+        +CarouselItemUp('src/Images/Products/bicicleta (1).png' , '3.0 LOW ENTRY' , -1)
+        +CarouselItemUp('src/Images/Products/bicicleta (2).png' , '3.0 LOW ENTRY' , -1)
         .carousel_up__items__item
             img(src=`../src/Images/Products/bicicleta (1).png`, alt=`asd` , class="relleno")
     section.carousel_up__galery-points

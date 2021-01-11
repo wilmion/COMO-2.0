@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const  { CleanWebpackPlugin }  =  require ( 'clean-webpack-plugin' ) ;
+const  { CleanWebpackPlugin }  =  require ( 'clean-webpack-plugin' );
 module.exports = {
     entry: './src/index.js',
     output: {
@@ -28,10 +28,11 @@ module.exports = {
                 }
             },
             {
-                test: /\.html$/,
+                test: /\.pug$/,
                 use:[
+                    'html-loader',
                     {
-                        loader: 'html-loader'
+                        loader: 'pug-html-loader'
                     }
                 ]
             },
@@ -82,7 +83,7 @@ module.exports = {
         new  CleanWebpackPlugin (), 
         new HtmlWebpackPlugin({
             filename: './index.html',
-            template: path.resolve(__dirname , 'public/index.html')
+            template: path.resolve(__dirname , 'public/index.pug')
         }),
         new MiniCSSExtractPlugin({
             filename: 'css/[hash][id].css',

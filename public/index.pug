@@ -2,7 +2,7 @@ extends  ./templates/header.pug
 block contenidos
     main.main
         include ./templates/components/carousel_first.pug
-        section.informacion
+        section.informacion(tabindex="0")
             h2.informacion__title DIVERSIÓN SIN LÍMITES
             p.informacion__descripcion 
                 | Con estilo, potente y divertida, la Turbo como te hace sentir bien. La conducción es 
@@ -10,7 +10,7 @@ block contenidos
                 | tan suave y cómoda como parece, y su diseño eficiente te ayuda a sacar el máximo 
                 br
                 | provecho en cada pedaleada. Esta bici te hará sonreír más y sudar menos.
-        section.informacionProduct(class="informacionProduct--black")
+        section.informacionProduct(class="informacionProduct--black" , tabindex="0")
             .columna
                 img(src="../src/Images/Products/Motor.jpg", alt="Motor") 
             .columna
@@ -28,7 +28,7 @@ block contenidos
                 .columna__details
                     +details("POTENCIA","4x Tú" , "first")
                     +details("PESO" , "3.4kg" , "first")
-        section.informacionProduct
+        section.informacionProduct(tabindex="0")
             .columna
                 img(src="../src/Images/Products/Termometer.jpg", alt="Motor") 
             .columna
@@ -45,7 +45,7 @@ block contenidos
                     +details("POTENCIA","600 Wh" , "second")
                     +details("TIEMPO DE CARGA" , "4h40m" , "second")
                     
-        section.informacion(class="informacion__second")
+        section.informacion(class="informacion__second" , tabindex="0")
             h2.informacion__title COMPRA EL EQUIPO
             p.informacion__descripcion 
                 | Lorem ipsum dolor sit amet, consectetur adipiscing adipiscing elit.

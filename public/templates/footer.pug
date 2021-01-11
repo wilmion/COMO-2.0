@@ -1,6 +1,6 @@
 footer.footer
     section.contentBefore
-        .information
+        .information(tabindex="0")
             h2.contentBefore__information__title PONTE EN CONTACTO CON NOSOTROS
             h3.contentBefore__information__description 
                 | Si necesitas recibir más información sobre
@@ -15,20 +15,20 @@ footer.footer
                 img(src="../src/Images/loges/email_loge-svg.png", alt="Email Address")
                 p specializedxp@gmail.com
         .formulario
-            form(action="")
+            form
                 +inputs('Nombre Completo' , 'text')
                 +inputs('Ciudad' , 'text')
                 +inputs('E-mail' , 'email')
                 +inputs('Celular' , 'text')
                 +inputs('Mensaje' , 'text')
                 label(for="UseDates")
-                    div.formulario__checkbox__decoration(id="UseDates")
+                    div.formulario__checkbox__decoration(id="UseDates",tabindex="0")
                     span.formulario__checkboxinfo Acepto el uso de mis datos
                 label(for="MeInterting")
-                    div.formulario__checkbox__decoration(id="MeInterting")
+                    div.formulario__checkbox__decoration(id="MeInterting",tabindex="0")
                     span.formulario__checkboxinfo Me interesa recibir información de la marca
                 input#enviarFormulario(class="formulario__submit" , type="submit", value="ENVIAR")
-    section.contentAfter
+    section.contentAfter(tabindex="0")
         .contentAfter__line
         .contentAfter__final
             p.contentAfter__final__information Copyright © 2020 Perú, todos los derechos reservados.

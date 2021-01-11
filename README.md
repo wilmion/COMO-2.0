@@ -5,6 +5,7 @@
  - Pug
  - Webpack
  - Babel
+ - React(Proximamente.....)
 
 Pagina del Proyecto = [COMO Page](https://wilmion.github.io/COMO/dist/ "COMO Page")
 
@@ -17,10 +18,6 @@ Pagina del Proyecto = [COMO Page](https://wilmion.github.io/COMO/dist/ "COMO Pag
 	```bash
     npm start || npm run start
     ```
-3. Construir el archivo de pug
-	```bash
-    npm run pug
-    ```
 
 ### Importante
 > Cabe aclarar que la pagina que acabo de crear le pertenece a COMO . Esta pagina es de un proyecto antiguo pero mejorado para mi portafolio de proyectos
@@ -29,8 +26,8 @@ Pagina del Proyecto = [COMO Page](https://wilmion.github.io/COMO/dist/ "COMO Pag
 ------------
 
 
-###### Aun me encuentro en el desarrollo de esta pagina
+###### Pagina Terminada (Si ven un error mandar un pull request con gusto lo leere)
 
 ```javascript
-const mensaje = 'Nunca pares de aprender..'
+    const mensaje = 'Nunca pares de aprender..'
 ```
