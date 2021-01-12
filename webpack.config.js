@@ -37,6 +37,12 @@ module.exports = {
                 ]
             },
             {
+                test: /\.html$/,
+                use : [
+                    'html-loader'
+                ]
+            },
+            {
                 test : /\.(s*)css$/,
                 use : [
                     {
@@ -83,7 +89,7 @@ module.exports = {
         new  CleanWebpackPlugin (), 
         new HtmlWebpackPlugin({
             filename: './index.html',
-            template: path.resolve(__dirname , 'public/index.pug')
+            template: path.resolve(__dirname , 'public/index.html')
         }),
         new MiniCSSExtractPlugin({
             filename: 'css/[hash][id].css',
