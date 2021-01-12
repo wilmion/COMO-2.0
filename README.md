@@ -21,7 +21,7 @@ Pagina del Proyecto = [COMO Page](https://wilmion.github.io/COMO/dist/ "COMO Pag
 
 ### Nota
 
- - Estoy en processo de cambiar de Pug a React 
+ - Estoy en proceso de cambiar de Pug a React 
 
 ### Importante
 > Cabe aclarar que la pagina que acabo de crear le pertenece a COMO . Esta pagina es de un proyecto antiguo pero mejorado para mi portafolio de proyectos
@@ -30,7 +30,7 @@ Pagina del Proyecto = [COMO Page](https://wilmion.github.io/COMO/dist/ "COMO Pag
 ------------
 
 
-###### Pagina Terminada (Si ven un error mandar un pull request con gusto lo leere)
+###### Pagina en proceso
 
 ```javascript
     const mensaje = 'Nunca pares de aprender..'
