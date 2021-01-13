@@ -1,4 +1,5 @@
 import React from 'react';
+import Carousel from '../components/carousel';
 import Information from '../components/Information';
 import InformationProducts from '../components/InformationProducts';
 import Layout from './Layout';
@@ -35,10 +36,12 @@ const Home = () => {
     return (
         <>
             <Layout>
-            <Information title="DIVERSIÓN SIN LÍMITES" description={information[0]} />
-            <InformationProducts isBlack title="POTENCIA SUAVE" description={Products.first.description} potency="4x Tú" second_value={Products.first.value} />
-            <InformationProducts title="SIEMPRE EN MOVIMIENTO" description={Products.second.description} potency="600 Wh" second_value={Products.second.value} />
-            <Information title="COMPRA EL EQUIPO" description={information[1]} isSecond />
+                <Carousel />           
+                <Information title="DIVERSIÓN SIN LÍMITES" description={information[0]} />
+                <InformationProducts isBlack title="POTENCIA SUAVE" description={Products.first.description} potency="4x Tú" second_value={Products.first.value} />
+                <InformationProducts title="SIEMPRE EN MOVIMIENTO" description={Products.second.description} potency="600 Wh" second_value={Products.second.value} />
+                <Information title="COMPRA EL EQUIPO" description={information[1]} isSecond />
+                <Carousel isSecond />
             </Layout>
         </>
     );
