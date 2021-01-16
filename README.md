@@ -2,7 +2,6 @@
 ##### Tecnologías Usadas
  - Sass
  - JS Vanilla
- - Pug
  - Webpack
  - Babel
  - React
@@ -21,7 +20,7 @@ Pagina del Proyecto = [COMO Page](https://wilmion.github.io/COMO/dist/ "COMO Pag
 
 ### Nota
 
- - Estoy en proceso de cambiar de Pug a React 
+ - React Implementado
 
 ### Importante
 > Cabe aclarar que la pagina que acabo de crear le pertenece a COMO . Esta pagina es de un proyecto antiguo pero mejorado para mi portafolio de proyectos
