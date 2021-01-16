@@ -1,9 +1,37 @@
-import React from 'react';
+import React ,{useEffect} from 'react';
 import Carousel from '../components/carousel';
 import Information from '../components/Information';
 import InformationProducts from '../components/InformationProducts';
 import Layout from './Layout';
 
+const InitializateCarousel = () => {
+    useEffect(() => {
+        const content = document.querySelector('.carousel_up__items');
+        const width = window.innerWidth;
+        const diferenceWidths = width < 600?  (590 - width ) : (2000 - width);
+        const newScroll = width < 600?  (1103 + (0.5 * diferenceWidths)) : (579 + (0.498 * diferenceWidths));
+        setTimeout(() => {
+            content.scrollLeft = newScroll;
+        }, 100)
+        const points_galery = document.querySelectorAll('.carousel_up__galery-points--point');
+        points_galery[1].className = "carousel_up__galery-points--point--active";
+
+        let ContentChildren = content.children;
+        let Img_carousel_up = ContentChildren[2].children;
+        Img_carousel_up[0].className = "active";
+
+        //Back
+        let Element = document.querySelector('.carousel_back__items');
+        if(width < 1100){
+            const diferense_Scroll = 1100 - width;
+            const newScrollBack = 42 + (0.507 * diferense_Scroll);
+            Element.scrollLeft = newScrollBack;
+        }
+        const Inactive_element = Element.children;
+        Inactive_element[0].style.opacity = "1";
+        Inactive_element[3].style.opacity = "0.5";
+    });
+}
 const Home = () => {
     const information = [
         ['Con estilo, potente y divertida, la Turbo como te hace sentir bien. La conducción es',
@@ -32,7 +60,7 @@ const Home = () => {
             ]
         }
     }
-
+    InitializateCarousel();
     return (
         <>
             <Layout>

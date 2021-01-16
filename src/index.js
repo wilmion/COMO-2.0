@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './routes/App';
-import { AddEventListenerClickAccions , CarouselBackInit } from './components/checkboxes';
 import './sass/index.scss';
 import './sass/Mobile.scss';
 import './sass/Desktop-L.scss';
@@ -17,6 +16,4 @@ WebFont.load({
 
 
 const Aplication = document.getElementById('App');
-ReactDOM.render( <App /> , Aplication )
-AddEventListenerClickAccions();
-CarouselBackInit();
+ReactDOM.render( <App /> , Aplication );

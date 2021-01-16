@@ -16,7 +16,7 @@
         }
     }
     &__items{
-        overflow: hidden;
+        overflow: scroll;
         display: flex;
         &::-webkit-scrollbar{
             display: none;
